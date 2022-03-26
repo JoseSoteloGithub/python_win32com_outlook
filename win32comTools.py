@@ -2,6 +2,8 @@ import sys
 
 
 def handle_attribute_error_CLSIDToClassMap(attribute_error_str):
+    # Use this on Attribute Error "has no attribute 'CLSIDToClassMap'"
+    # This error happens when on this call win32com.client.Dispatch()
     from shutil import rmtree
 
     first_section_find_str = 'win32com.gen_py.'
